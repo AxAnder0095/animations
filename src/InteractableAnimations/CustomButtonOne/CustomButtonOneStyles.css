@@ -1,0 +1,67 @@
+.custom-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#buttonOne {
+  font-size: 1.3rem;
+  border: none;
+  padding: 5px 10px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: color 300ms ease-in-out;
+  z-index: 1;
+}
+#buttonOne:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: black;
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+#buttonOne:hover:before, #buttonOne:focus:before {
+  transform: scaleX(1);
+}
+#buttonOne:hover, #buttonOne:focus {
+  color: white;
+}
+
+#buttonTwo {
+  font-size: 1.3rem;
+  border: none;
+  padding: 5px 10px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: color 0.5s ease-in-out;
+  z-index: 1;
+}
+#buttonTwo:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: black;
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0) skewX(50deg);
+  transform-origin: center;
+}
+#buttonTwo:hover:before, #buttonTwo:focus:before {
+  transform: scaleX(2);
+}
+#buttonTwo:hover, #buttonTwo:focus {
+  color: white;
+}
+
+/*# sourceMappingURL=CustomButtonOneStyles.css.map */

@@ -1,0 +1,39 @@
+.Fade-in-box {
+  padding: 10px;
+}
+
+.Fade-in-desc {
+  height: 25%;
+}
+
+.Fade-in-inner-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  height: 75%;
+  border-radius: 5px;
+}
+
+.Fade-in-square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: Fade-inSquare;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes Fade-inSquare {
+  0% {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=FadeInSquareStyles.css.map */

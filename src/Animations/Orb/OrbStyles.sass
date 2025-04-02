@@ -1,0 +1,42 @@
+.orb
+  animation: orbSpin 2s linear infinite
+  width: 150px
+  height: 150px
+  margin: auto
+  border-radius: 50%
+  position: relative
+
+  // left top blur-intensity color (20px 0 60px violet)
+  // if using negative values
+  // right bottom blur-intensity color (-20px 0 60px blue)
+  $box-elm1: inset 0 0 50px #fff
+  $box-elm2: inset 20px 0 60px violet
+  $box-elm3: inset -20px 0 60px blue
+  $box-elm4: inset 20px 0 300px violet
+  $box-elm5: inset -20px 0 300px blue
+  $box-elm6: 0 0 50px #fff // outside blur
+  $box-elm7: -10px 0 60px violet
+  $box-elm8: 10px 0 60px blue
+
+  box-shadow: $box-elm1, $box-elm2, $box-elm3, $box-elm4, $box-elm5, $box-elm6, $box-elm7, $box-elm8
+
+  @keyframes orbSpin
+    from
+      transform: rotate(0deg)
+
+    to
+      transform: rotate(360deg)
+
+
+  //@keyframes orbSpin
+  //  0%
+  //    top: 20px
+  //  25%
+  //    top: 22px
+  //  50%
+  //    top: 30px
+  //  75%
+  //    top: 27px
+  //  100%
+  //    transform: rotate(360deg)
+  //    top: 20px

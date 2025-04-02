@@ -1,0 +1,112 @@
+.CSC-box {
+  padding: 10px;
+}
+
+.CSC-desc {
+  height: 25%;
+}
+
+.CSC-inner-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  height: 75%;
+  border-radius: 5px;
+}
+
+.CSC-square1, .CSC-square2, .CSC-square3, .CSC-square4 {
+  width: 50px;
+  height: 50px;
+}
+
+.CSC-square1 {
+  background-color: red;
+  animation: CSCube1 infinite step-end 3s;
+  transition-delay: 0s;
+}
+@keyframes CSCube1 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: greenyellow;
+  }
+  50% {
+    background-color: goldenrod;
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.CSC-square2 {
+  background-color: blue;
+  animation: CSCube2 infinite step-end 3s;
+}
+@keyframes CSCube2 {
+  0% {
+    background-color: blue;
+  }
+  25% {
+    background-color: red;
+  }
+  50% {
+    background-color: greenyellow;
+  }
+  75% {
+    background-color: goldenrod;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+.CSC-square3 {
+  background-color: goldenrod;
+  animation: CSCube3 infinite step-end 3s;
+}
+@keyframes CSCube3 {
+  0% {
+    background-color: goldenrod;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: red;
+  }
+  75% {
+    background-color: greenyellow;
+  }
+  100% {
+    background-color: goldenrod;
+  }
+}
+
+.CSC-square4 {
+  background-color: greenyellow;
+  animation: CSCube4 infinite step-end 3s;
+}
+@keyframes CSCube4 {
+  0% {
+    background-color: greenyellow;
+  }
+  25% {
+    background-color: goldenrod;
+  }
+  50% {
+    background-color: blue;
+  }
+  75% {
+    background-color: red;
+  }
+  100% {
+    background-color: greenyellow;
+  }
+}
+
+/*# sourceMappingURL=ColorShiftCubeStyles.css.map */

@@ -1,0 +1,112 @@
+h1 {
+  font-family: "Press Start 2P", system-ui, Poppins, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-container {
+  color: white;
+  width: 100%;
+}
+
+.intro-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-name {
+  font-family: "Press Start 2P", system-ui, Poppins, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.animations-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.animation-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .animation-row {
+    flex-direction: column;
+  }
+}
+
+.animation-box-one, .animation-box-two {
+  border-radius: 5px;
+  width: 550px;
+  height: 400px;
+}
+@media (max-width: 767px) {
+  .animation-box-one, .animation-box-two {
+    width: 100%;
+  }
+}
+
+.header-text {
+  font-family: "Press Start 2P", system-ui, Poppins, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5rem;
+  animation-name: movingTitle;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes movingTitle {
+  0% {
+    margin-right: 180px;
+    opacity: 0;
+  }
+  100% {
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.intro-wrapper {
+  background-color: #171717;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.intro-wrapper:after, .intro-wrapper:before {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+  animation-duration: 3s;
+  animation-name: gradient-spin;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.intro-wrapper:before {
+  filter: blur(3.5rem);
+  opacity: 0.3;
+}
+@keyframes gradient-spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+/*# sourceMappingURL=MainPageStyles.css.map */

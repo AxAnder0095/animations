@@ -1,0 +1,40 @@
+.Floating-box {
+  padding: 10px;
+}
+
+.Floating-desc {
+  height: 25%;
+}
+
+.Floating-inner-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  height: 75%;
+  border-radius: 5px;
+}
+
+.Floating-square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: FloatingSquare;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes FloatingSquare {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=FloatingSquareStyles.css.map */

@@ -1,0 +1,18 @@
+.ANI-box {
+  padding: 10px;
+}
+
+.ANI-desc {
+  height: 25%;
+}
+
+.ANI-inner-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  height: 75%;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=AnimationBoxLayoutStyles.css.map */

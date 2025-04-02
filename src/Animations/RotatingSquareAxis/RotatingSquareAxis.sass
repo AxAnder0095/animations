@@ -1,0 +1,64 @@
+.RA-box
+  padding: 10px
+
+.RA-desc
+  height: 25%
+
+.RA-inner-box
+  display: flex
+  justify-content: center
+  align-items: center
+  border: 1px solid white
+  height: 75%
+  border-radius: 5px
+  gap: 20px
+
+.RA-square1
+  width: 100px
+  height: 100px
+  background-color: red
+  animation-name: rotateSXAxis
+  animation-duration: 4s
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+
+  @keyframes rotateSXAxis
+    from
+      transform: rotateX(0deg)
+
+    to
+      transform: rotateX(360deg)
+
+
+.RA-square2
+  width: 100px
+  height: 100px
+  background-color: red
+  animation-name: rotateSYAxis
+  animation-duration: 4s
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+
+  @keyframes rotateSYAxis
+    from
+      transform: rotateY(0deg)
+
+    to
+      transform: rotateY(360deg)
+
+
+.RA-square3
+  width: 100px
+  height: 100px
+  background-color: red
+  animation-name: rotateSZAxis
+  animation-duration: 4s
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+
+  @keyframes rotateSZAxis
+    from
+      transform: rotateZ(0deg)
+
+    to
+      transform: rotateZ(360deg)

@@ -1,0 +1,117 @@
+$pixel-font: "Press Start 2P", system-ui,  Poppins, Verdana, Geneva, Tahoma, sans-serif
+$main-background-color: #171717
+
+h1
+  font-family: $pixel-font
+
+.main-container
+  color: white
+  width: 100%
+
+.intro-section
+  //border: 1px solid white
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+.my-name
+  font-family: $pixel-font
+
+.animations-section
+  display: flex
+  flex-direction: column
+  justify-content: center
+  //border: 1px solid white
+
+
+
+.animation-row
+  display: flex
+  justify-content: center
+  gap: 30px
+  //border: 1px solid white
+  width: 100%
+
+  @media (max-width: 767px)
+    flex-direction: column
+
+
+.animation-box-one, .animation-box-two
+  //border: 1px solid rgba(255, 255, 255, 0.5)
+  border-radius: 5px
+  width: 550px
+  height: 400px
+
+  @media (max-width: 767px)
+    width: 100%
+    //display: flex
+    //justify-content: center
+
+
+// -------------------------------
+//animations and special effects
+//--------------------------------
+
+.header-text
+  font-family: $pixel-font
+  font-size: 2.5rem
+  animation-name: movingTitle
+  animation-duration: 2.5s
+  animation-iteration-count: 1
+  animation-timing-function: ease-out
+  animation-delay: 0.2s
+  animation-fill-mode: forwards
+  opacity: 0
+
+  @keyframes movingTitle
+    0%
+      margin-right: 180px
+      opacity: 0
+
+    100%
+      margin-right: 0
+      opacity: 1
+
+
+@property --angle
+  syntax: "<angle>"
+  initial-value: 0deg
+  inherits: false
+
+.intro-wrapper
+  //border: 1px solid white
+  background-color: $main-background-color
+  text-align: center
+  padding: 20px
+  border-radius: 10px
+  position: relative
+
+  &:after, &:before
+    content: ''
+    position: absolute
+    border-radius: 10px
+    //width: 100%
+    //height: 100%
+    //background-image: conic-gradient(#ff4545, #00ff99, #006aff, #ff0095, #ff4545)
+    //background-image: conic-gradient(from var(--angle), transparent 70%, #ff4545, #00ff99, #006aff, #ff0095, #ff4545)
+    top: -5px
+    left: -5px
+    right: -5px
+    bottom: -5px
+    z-index: -1
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545)
+    animation-duration: 3s
+    animation-name: gradient-spin
+    animation-timing-function: linear
+    animation-iteration-count: infinite
+
+  &:before
+    filter: blur(3.5rem)
+    opacity: 0.3
+
+  @keyframes gradient-spin
+    from
+      --angle: 0deg
+    to
+      --angle: 360deg

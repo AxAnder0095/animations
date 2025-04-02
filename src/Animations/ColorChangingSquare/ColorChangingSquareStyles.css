@@ -1,0 +1,46 @@
+.CCC-box {
+  padding: 10px;
+}
+
+.CCC-desc {
+  height: 25%;
+}
+
+.CCC-inner-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  height: 75%;
+  border-radius: 5px;
+}
+
+.color-change-square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: colorChange-square;
+  animation-duration: 5.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes colorChange-square {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  75% {
+    background-color: green;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+/*# sourceMappingURL=ColorChangingSquareStyles.css.map */
