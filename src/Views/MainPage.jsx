@@ -13,6 +13,7 @@ import ExampleAnimation from "../Animations/exampleAnimation/ExampleAnimation.js
 import Orb from "../Animations/Orb/Orb.jsx";
 import RotatingRectangles from "../Animations/RotatingRectangles/RotatingRectangles.jsx";
 import CustomButtonOne from "../InteractableAnimations/CustomButtonOne/CustomButtonOne.jsx";
+import ZoomIn from "../Animations/ZoomIn/ZoomIn.jsx";
 
 function MainPage() {
     return (
@@ -29,7 +30,7 @@ function MainPage() {
                         {/*<div className={'intro-wrapper-background'}></div>*/}
                     </div>
                 </div>
-                <h1 className={'text-center mb-5'}>Animation Section 1</h1>
+                <h1 className={'text-center mb-5'}>Simple Animations</h1>
                 <div className={'animations-section'}>
                     <div className={'animation-row'}>
                         <div className={'animation-box-one'}>
@@ -64,7 +65,7 @@ function MainPage() {
                         </div>
                     </div>
                 </div>
-                <h1 className={'text-center mt-5'}>Animation Section 2</h1>
+                <h1 className={'text-center mt-5'}>3D and other Animations</h1>
                 <div className={'animations-section'}>
                     <div className={'animation-row mt-4'}>
                         <div className={'animation-box-one'}>
@@ -87,13 +88,13 @@ function MainPage() {
                                 child={<RotatingRectangles/>}
                             />
                         </div>
-                        {/*<div className={'animation-box-two'}>*/}
-                        {/*    <AnimationBoxLayout*/}
-                        {/*        title={'Some animation'}*/}
-                        {/*        desc={'Some animation that does something'}*/}
-
-                        {/*    />*/}
-                        {/*</div>*/}
+                        <div className={'animation-box-two'}>
+                            <AnimationBoxLayout
+                                title={'Zoom'}
+                                desc={'Animation that zooms in content'}
+                                child={<ZoomIn/>}
+                            />
+                        </div>
                     </div>
                 </div>
                 <h1 className={'text-center mt-5'}>Interactable Animations</h1>
