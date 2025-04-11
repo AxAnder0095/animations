@@ -1,20 +1,3 @@
-.CCC-box {
-  padding: 10px;
-}
-
-.CCC-desc {
-  height: 25%;
-}
-
-.CCC-inner-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid white;
-  height: 75%;
-  border-radius: 5px;
-}
-
 .color-change-square {
   width: 100px;
   height: 100px;

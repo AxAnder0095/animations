@@ -1,20 +1,3 @@
-.Moving-box {
-  padding: 10px;
-}
-
-.Moving-desc {
-  height: 25%;
-}
-
-.Moving-inner-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid white;
-  height: 75%;
-  border-radius: 5px;
-}
-
 .Moving-square {
   width: 100px;
   height: 100px;

@@ -104,49 +104,43 @@ function MainPage() {
                         />
                     </Link>
 
-                </div>
-                <h1 className={'text-center mt-5'}>3D Animations <br/> non-interactive</h1>
-                <div className={'animations-section'}>
-                    <div className={'animation-row mt-4'}>
-                        <div className={'animation-box-one'}>
-                            <Cube/>
-                        </div>
-                    </div>
-                    <div className={'animation-row mt-4'}>
-                        <div className={'animation-box-one'}>
-                            <AnimationBoxLayout
-                                title={'Rotating Rectangles'}
-                                desc={'Cards that spin in a 3d space'}
-                                child={<RotatingRectangles/>}
-                            />
-                        </div>
-                        <div className={'animation-box-two'}>
-                            <AnimationBoxLayout
-                                title={'Zoom'}
-                                desc={'Animation that zooms in content'}
-                                child={<ZoomIn/>}
-                            />
-                        </div>
-                    </div>
-                </div>
-                <h1 className={'text-center mt-5'}>Interactable Animations</h1>
-                <div className={'animations-section'}>
-                    <div className={'animation-row mt-4'}>
-                        <div className={'animation-box-one'}>
-                            <AnimationBoxLayout
-                                title={'Custom Button'}
-                                desc={'some animation'}
-                                child={<CustomButtonOne/>}
-                            />
-                        </div>
-                        <div className={'animation-box-two'}>
-                            <AnimationBoxLayout
-                                title={'Some animation'}
-                                desc={'Some animation that does something'}
+                    {/*row four*/}
+                    <Link className={'source-link'} to={'/'}>
+                        <LayoutBox
+                            title={'Zoom'}
+                            description={'Zoom in effect using scale'}
+                            animation={<ZoomIn/>}
+                        />
+                    </Link>
 
-                            />
-                        </div>
-                    </div>
+                </div>
+                <h1 className={'text-center mb-5 mt-5'}>3D Animations <br/> non-interactive</h1>
+                <div className={'three-d-animations'}>
+                    {/*row one*/}
+                    <Link className={'source-link'} to={'/'}>
+                        <LayoutBox
+                            title={'Cube'}
+                            description={'Cube using 3d space'}
+                            animation={<Cube/>}
+                        />
+                    </Link>
+                    <Link className={'source-link'} to={'/'}>
+                        <LayoutBox
+                            title={'Rotating cards'}
+                            description={'Cards that spin in a 3d space'}
+                            animation={<RotatingRectangles/>}
+                        />
+                    </Link>
+                </div>
+                <h1 className={'text-center mt-5 mb-5'}>Interactable Animations</h1>
+                <div className={'interactable-animations mb-5'}>
+                    <Link className={'source-link-interactable'} to={'/'}>
+                        <LayoutBox
+                            title={'Hover Effect Button'}
+                            description={'Buttons where background transition to black and text transitions to white'}
+                            animation={<CustomButtonOne/>}
+                        />
+                    </Link>
                 </div>
             </div>
         </div>
