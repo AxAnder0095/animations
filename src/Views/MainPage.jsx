@@ -33,21 +33,21 @@ function MainPage() {
                 <div className={'two-d-animations'}>
 
                     {/*row one*/}
-                    <Link className={'source-link'} to={'/'}>
+                    <Link className={'source-link'} to={'https://github.com/AxAnder0095/animations/tree/master/src/Animations/ColorChangingSquare'}>
                         <LayoutBox
                             title={'Color Changing Square'}
                             description={'Square that cycles between 4 different colors.'}
                             animation={<ColorChangingSquare/>}
                         />
                     </Link>
-                    <Link className={'source-link'} to={'/'}>
+                    <Link className={'source-link'} to={'https://github.com/AxAnder0095/animations/tree/master/src/Animations/RotatingSquare'}>
                         <LayoutBox
                             title={'Rotating Square'}
                             description={'Square that rotates to the right.'}
                             animation={<RotatingSquare/>}
                         />
                     </Link>
-                    <Link className={'source-link'} to={'/'}>
+                    <Link className={'source-link'} to={'https://github.com/AxAnder0095/animations/tree/master/src/Animations/MovingSquare'}>
                         <LayoutBox
                             title={'Moving Square'}
                             description={'Square that moves right, down, left and back to it\'s original position'}
@@ -56,21 +56,21 @@ function MainPage() {
                     </Link>
 
                     {/*row two*/}
-                    <Link className={'source-link'} to={'/'}>
+                    <Link className={'source-link'} to={'https://github.com/AxAnder0095/animations/tree/master/src/Animations/FloatingSquare'}>
                         <LayoutBox
                             title={'Floating Square'}
                             description={'Square that has a floating effect.'}
                             animation={<FloatingSquare/>}
                         />
                     </Link>
-                    <Link className={'source-link'} to={'/'}>
+                    <Link className={'source-link'} to={'https://github.com/AxAnder0095/animations/tree/master/src/Animations/FadeInSquare'}>
                         <LayoutBox
                             title={'Fading Square'}
                             description={'Square that fades in from the left to right'}
                             animation={<FadeInSquare/>}
                         />
                     </Link>
-                    <Link className={'source-link'} to={'/'}>
+                    <Link className={'source-link'} to={'https://github.com/AxAnder0095/animations/tree/master/src/Animations/RotatingSquareAxis'}>
                         <LayoutBox
                             title={'Rotating Squares'}
                             description={'Squares that rotate on x, y and z axis'}
@@ -79,21 +79,21 @@ function MainPage() {
                     </Link>
 
                     {/*row three*/}
-                    <Link className={'source-link'} to={'/'}>
+                    <Link className={'source-link'} to={'https://github.com/AxAnder0095/animations/tree/master/src/Animations/OverlappingSquares'}>
                         <LayoutBox
                             title={'Overlapping Squares'}
                             description={'Squares that overlap one another with absolute positioning'}
                             animation={<OverlappingSquares/>}
                         />
                     </Link>
-                    <Link className={'source-link'} to={'/'}>
+                    <Link className={'source-link'} to={'https://github.com/AxAnder0095/animations/tree/master/src/Animations/ColorShiftCube'}>
                         <LayoutBox
                             title={'Color Changing Squares'}
                             description={'Squares that shift colors left to right'}
                             animation={<ColorShiftCube/>}
                         />
                     </Link>
-                    <Link className={'source-link'} to={'/'}>
+                    <Link className={'source-link'} to={'https://github.com/AxAnder0095/animations/tree/master/src/Animations/Orb'}>
                         <LayoutBox
                             title={'Orb'}
                             description={'Spinning orb with inner and outer box shadows'}
@@ -102,7 +102,7 @@ function MainPage() {
                     </Link>
 
                     {/*row four*/}
-                    <Link className={'source-link'} to={'/'}>
+                    <Link className={'source-link'} to={'https://github.com/AxAnder0095/animations/tree/master/src/Animations/ZoomIn'}>
                         <LayoutBox
                             title={'Zoom'}
                             description={'Zoom in effect using scale'}
@@ -114,14 +114,14 @@ function MainPage() {
                 <h1 className={'text-center mb-5 mt-5'}>3D Animations <br/> non-interactive</h1>
                 <div className={'three-d-animations'}>
                     {/*row one*/}
-                    <Link className={'source-link'} to={'/'}>
+                    <Link className={'source-link'} to={'https://github.com/AxAnder0095/animations/tree/master/src/Animations/Cube'}>
                         <LayoutBox
                             title={'Cube'}
                             description={'Cube using 3d space'}
                             animation={<Cube/>}
                         />
                     </Link>
-                    <Link className={'source-link'} to={'/'}>
+                    <Link className={'source-link'} to={'https://github.com/AxAnder0095/animations/tree/master/src/Animations/RotatingRectangles'}>
                         <LayoutBox
                             title={'Rotating cards'}
                             description={'Cards that spin in a 3d space'}
@@ -131,7 +131,7 @@ function MainPage() {
                 </div>
                 <h1 className={'text-center mt-5 mb-5'}>Interactable Animations</h1>
                 <div className={'interactable-animations mb-5'}>
-                    <Link className={'source-link-interactable'} to={'/'}>
+                    <Link className={'source-link-interactable'} to={'https://github.com/AxAnder0095/animations/tree/master/src/InteractableAnimations/CustomButtonOne'}>
                         <LayoutBox
                             title={'Hover Effect Button'}
                             description={'Buttons where background transition to black and text transitions to white'}
