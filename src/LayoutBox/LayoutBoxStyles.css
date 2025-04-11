@@ -1,0 +1,14 @@
+.layout-box {
+  box-sizing: border-box;
+  padding: 0.75rem;
+}
+
+.layout-box-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  height: 400px;
+}
+
+/*# sourceMappingURL=LayoutBoxStyles.css.map */

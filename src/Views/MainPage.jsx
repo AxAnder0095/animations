@@ -14,10 +14,12 @@ import Orb from "../Animations/Orb/Orb.jsx";
 import RotatingRectangles from "../Animations/RotatingRectangles/RotatingRectangles.jsx";
 import CustomButtonOne from "../InteractableAnimations/CustomButtonOne/CustomButtonOne.jsx";
 import ZoomIn from "../Animations/ZoomIn/ZoomIn.jsx";
+import {Link} from "react-router-dom";
+import LayoutBox from "../LayoutBox/LayoutBox.jsx";
 
 function MainPage() {
     return (
-        <div>
+        <div className={'main-wrapper'}>
             <div className={'main-container'}>
                 <div className={'intro-section'}>
                     <div className={'intro-wrapper'}>
@@ -30,57 +32,84 @@ function MainPage() {
                         {/*<div className={'intro-wrapper-background'}></div>*/}
                     </div>
                 </div>
-                <h1 className={'text-center mb-5'}>Simple Animations</h1>
+                <h1 className={'text-center mb-5'}>2D Flat Animations <br/> (non-interactive)</h1>
                 <div className={'two-d-animations'}>
 
+                    {/*row one*/}
+                    <Link className={'source-link'} to={'/'}>
+                        <LayoutBox
+                            title={'Color Changing Square'}
+                            description={'Square that cycles between 4 different colors.'}
+                            animation={<ColorChangingSquare/>}
+                        />
+                    </Link>
+                    <Link className={'source-link'} to={'/'}>
+                        <LayoutBox
+                            title={'Rotating Square'}
+                            description={'Square that rotates to the right.'}
+                            animation={<RotatingSquare/>}
+                        />
+                    </Link>
+                    <Link className={'source-link'} to={'/'}>
+                        <LayoutBox
+                            title={'Moving Square'}
+                            description={'Square that moves right, down, left and back to it\'s original position'}
+                            animation={<MovingSquare/>}
+                        />
+                    </Link>
+
+                    {/*row two*/}
+                    <Link className={'source-link'} to={'/'}>
+                        <LayoutBox
+                            title={'Floating Square'}
+                            description={'Square that has a floating effect.'}
+                            animation={<FloatingSquare/>}
+                        />
+                    </Link>
+                    <Link className={'source-link'} to={'/'}>
+                        <LayoutBox
+                            title={'Fading Square'}
+                            description={'Square that fades in from the left to right'}
+                            animation={<FadeInSquare/>}
+                        />
+                    </Link>
+                    <Link className={'source-link'} to={'/'}>
+                        <LayoutBox
+                            title={'Rotating Squares'}
+                            description={'Squares that rotate on x, y and z axis'}
+                            animation={<RotatingSquareAxis/>}
+                        />
+                    </Link>
+
+                    {/*row three*/}
+                    <Link className={'source-link'} to={'/'}>
+                        <LayoutBox
+                            title={'Overlapping Squares'}
+                            description={'Squares that overlap one another with absolute positioning'}
+                            animation={<OverlappingSquares/>}
+                        />
+                    </Link>
+                    <Link className={'source-link'} to={'/'}>
+                        <LayoutBox
+                            title={'Color Changing Squares'}
+                            description={'Squares that shift colors left to right'}
+                            animation={<ColorShiftCube/>}
+                        />
+                    </Link>
+                    <Link className={'source-link'} to={'/'}>
+                        <LayoutBox
+                            title={'Orb'}
+                            description={'Spinning orb with inner and outer box shadows'}
+                            animation={<Orb/>}
+                        />
+                    </Link>
+
                 </div>
-                <div className={'animations-section'}>
-                    <div className={'animation-row'}>
-                        <div className={'animation-box-one'}>
-                            <ColorChangingSquare/>
-                        </div>
-                        <div className={'animation-box-two'}>
-                            <RotatingSquare/>
-                        </div>
-                    </div>
-                    <div className={'animation-row mt-4'}>
-                        <div className={'animation-box-one'}>
-                            <MovingSquare/>
-                        </div>
-                        <div className={'animation-box-two'}>
-                            <FloatingSquare/>
-                        </div>
-                    </div>
-                    <div className={'animation-row mt-4'}>
-                        <div className={'animation-box-one'}>
-                            <FadeInSquare/>
-                        </div>
-                        <div className={'animation-box-two'}>
-                            <RotatingSquareAxis/>
-                        </div>
-                    </div>
-                    <div className={'animation-row mt-4'}>
-                        <div className={'animation-box-one'}>
-                            <OverlappingSquares/>
-                        </div>
-                        <div className={'animation-box-two'}>
-                            <ColorShiftCube/>
-                        </div>
-                    </div>
-                </div>
-                <h1 className={'text-center mt-5'}>3D and other Animations</h1>
+                <h1 className={'text-center mt-5'}>3D Animations <br/> non-interactive</h1>
                 <div className={'animations-section'}>
                     <div className={'animation-row mt-4'}>
                         <div className={'animation-box-one'}>
                             <Cube/>
-                        </div>
-                        <div className={'animation-box-two'}>
-                            {/*found out at this time I should just make a layout container*/}
-                            <AnimationBoxLayout
-                                title={'Orb'}
-                                desc={'Spinning orb with box-shadows '}
-                                child={<Orb/>}
-                            />
                         </div>
                     </div>
                     <div className={'animation-row mt-4'}>
