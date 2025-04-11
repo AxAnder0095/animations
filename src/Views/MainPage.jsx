@@ -17,20 +17,23 @@ import ZoomIn from "../Animations/ZoomIn/ZoomIn.jsx";
 
 function MainPage() {
     return (
-        <>
+        <div>
             <div className={'main-container'}>
                 <div className={'intro-section'}>
                     <div className={'intro-wrapper'}>
+                        <p>(WEBSITE UNDER CONSTRUCTION)</p>
                         <p className={'header-text'}>Animations</p>
                         <p className={'my-name'}>By Alexander Brown</p>
-                        <p>I made this website so I can learn animations with CSS and Javascript. All animations <br/>
-                            will have a link to the source code on my github.
+                        <p>I made this website so I can learn animations with CSS and Javascript.
                         </p>
                         <p>Start date: 3/30/2025</p>
                         {/*<div className={'intro-wrapper-background'}></div>*/}
                     </div>
                 </div>
                 <h1 className={'text-center mb-5'}>Simple Animations</h1>
+                <div className={'two-d-animations'}>
+
+                </div>
                 <div className={'animations-section'}>
                     <div className={'animation-row'}>
                         <div className={'animation-box-one'}>
@@ -117,7 +120,7 @@ function MainPage() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
