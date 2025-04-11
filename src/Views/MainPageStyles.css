@@ -73,55 +73,9 @@ h1 {
   box-shadow: 0 0 5px mediumspringgreen;
 }
 
-.animations-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.animation-row {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  width: 100%;
-}
-@media (max-width: 767px) {
-  .animation-row {
-    flex-direction: column;
-  }
-}
-
-.animation-box-one, .animation-box-two {
-  border-radius: 5px;
-  width: 550px;
-  height: 400px;
-}
-@media (max-width: 767px) {
-  .animation-box-one, .animation-box-two {
-    width: 100%;
-  }
-}
-
 .header-text {
   font-family: "Press Start 2P", system-ui, Poppins, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2.5rem;
-  animation-name: movingTitle;
-  animation-duration: 2.5s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-delay: 0.2s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-@keyframes movingTitle {
-  0% {
-    margin-right: 180px;
-    opacity: 0;
-  }
-  100% {
-    margin-right: 0;
-    opacity: 1;
-  }
 }
 
 @property --angle {
@@ -168,9 +122,21 @@ h1 {
   .two-d-animations {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .three-d-animations {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .interactable-animations {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 @media (max-width: 767px) {
   .two-d-animations {
+    grid-template-columns: 1fr;
+  }
+  .three-d-animations {
+    grid-template-columns: 1fr;
+  }
+  .interactable-animations {
     grid-template-columns: 1fr;
   }
 }

@@ -1,4 +1,5 @@
 import './MainPageStyles.sass'
+import {Link} from "react-router-dom";
 import ColorChangingSquare from "../Animations/ColorChangingSquare/ColorChangingSquare.jsx";
 import RotatingSquare from "../Animations/RotatingSquare/RotatingSquare.jsx";
 import MovingSquare from "../Animations/MovingSquare/MovingSquare.jsx";
@@ -8,13 +9,10 @@ import RotatingSquareAxis from "../Animations/RotatingSquareAxis/RotatingSquareA
 import Cube from "../Animations/Cube/Cube.jsx";
 import OverlappingSquares from "../Animations/OverlappingSquares/OverlappingSquares.jsx";
 import ColorShiftCube from "../Animations/ColorShiftCube/ColorShiftCube.jsx";
-import AnimationBoxLayout from "../AnimationBoxLayout/AnimationBoxLayout.jsx";
-import ExampleAnimation from "../Animations/exampleAnimation/ExampleAnimation.jsx";
 import Orb from "../Animations/Orb/Orb.jsx";
 import RotatingRectangles from "../Animations/RotatingRectangles/RotatingRectangles.jsx";
 import CustomButtonOne from "../InteractableAnimations/CustomButtonOne/CustomButtonOne.jsx";
 import ZoomIn from "../Animations/ZoomIn/ZoomIn.jsx";
-import {Link} from "react-router-dom";
 import LayoutBox from "../LayoutBox/LayoutBox.jsx";
 
 function MainPage() {
@@ -23,13 +21,12 @@ function MainPage() {
             <div className={'main-container'}>
                 <div className={'intro-section'}>
                     <div className={'intro-wrapper'}>
-                        <p>(WEBSITE UNDER CONSTRUCTION)</p>
                         <p className={'header-text'}>Animations</p>
                         <p className={'my-name'}>By Alexander Brown</p>
                         <p>I made this website so I can learn animations with CSS and Javascript.
+                            <br/> Click on an animation tile for source code.
                         </p>
                         <p>Start date: 3/30/2025</p>
-                        {/*<div className={'intro-wrapper-background'}></div>*/}
                     </div>
                 </div>
                 <h1 className={'text-center mb-5'}>2D Flat Animations <br/> (non-interactive)</h1>
