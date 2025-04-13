@@ -14,6 +14,8 @@ import RotatingRectangles from "../Animations/RotatingRectangles/RotatingRectang
 import CustomButtonOne from "../InteractableAnimations/CustomButtonOne/CustomButtonOne.jsx";
 import ZoomIn from "../Animations/ZoomIn/ZoomIn.jsx";
 import LayoutBox from "../LayoutBox/LayoutBox.jsx";
+import Atom from "../Animations/Atom/Atom.jsx";
+import SwapSides from "../Animations/SwapSides/SwapSides.jsx";
 
 function MainPage() {
     return (
@@ -109,6 +111,21 @@ function MainPage() {
                             animation={<ZoomIn/>}
                         />
                     </Link>
+                    <Link className={'source-link'} to={'/'}>
+                        <LayoutBox
+                            title={'Solar System'}
+                            description={'Miniature solar system using absolute and relative positioning. '}
+                            animation={<Atom/>}
+                        />
+                    </Link>
+                    <Link className={'source-link'} to={'/'}>
+                        <LayoutBox
+                            title={'Shift'}
+                            description={'Shift absolute container from left to right.'}
+                            animation={<SwapSides/>}
+                        />
+                    </Link>
+
 
 
                 </div>

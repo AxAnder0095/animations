@@ -1,0 +1,57 @@
+.swap-container {
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.swap-left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 50%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.swap-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.shift {
+  position: absolute;
+  background-color: rebeccapurple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  border-radius: 20px;
+  animation: leftToRight 4s infinite linear;
+}
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*# sourceMappingURL=SwapSidesStyles.css.map */

@@ -1,0 +1,101 @@
+.atom-main-circle {
+  border-radius: 50%;
+  background-color: goldenrod;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  opacity: 0.8;
+  box-shadow: 0 0 20px goldenrod;
+}
+
+.atom-outer-1 {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  right: -20%;
+  bottom: -20%;
+  opacity: 0.7;
+  border-radius: 50%;
+  border: 1px solid white;
+  animation: atomOuter1 2s infinite linear;
+}
+@keyframes atomOuter1 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+
+.atom-outer-1-dot {
+  position: absolute;
+  background-color: white;
+  width: 5%;
+  height: 5%;
+  left: 50%;
+  top: -2%;
+  border-radius: 50%;
+}
+
+.atom-outer-2 {
+  position: absolute;
+  top: -40%;
+  left: -40%;
+  right: -40%;
+  bottom: -40%;
+  opacity: 0.7;
+  border-radius: 50%;
+  border: 1px solid white;
+  animation: atomOuter2 5s infinite linear;
+}
+@keyframes atomOuter2 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.atom-outer-2-dot {
+  position: absolute;
+  background-color: white;
+  width: 5%;
+  height: 5%;
+  left: 50%;
+  top: -2%;
+  border-radius: 50%;
+}
+
+.atom-outer-3 {
+  position: absolute;
+  border: 1px solid white;
+  top: -80%;
+  left: -80%;
+  right: -80%;
+  bottom: -80%;
+  opacity: 0.7;
+  border-radius: 50%;
+  animation: atomOuter3 9s infinite linear;
+}
+@keyframes atomOuter3 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.atom-outer-3-dot {
+  position: absolute;
+  background-color: white;
+  width: 5%;
+  height: 5%;
+  left: 50%;
+  top: -2%;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=AtomStyles.css.map */
