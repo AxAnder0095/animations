@@ -111,14 +111,14 @@ function MainPage() {
                             animation={<ZoomIn/>}
                         />
                     </Link>
-                    <Link className={'source-link'} to={'/'}>
+                    <Link className={'source-link'} to={'https://github.com/AxAnder0095/animations/tree/master/src/Animations/Atom'}>
                         <LayoutBox
                             title={'Solar System'}
                             description={'Miniature solar system using absolute and relative positioning. '}
                             animation={<Atom/>}
                         />
                     </Link>
-                    <Link className={'source-link'} to={'/'}>
+                    <Link className={'source-link'} to={'https://github.com/AxAnder0095/animations/tree/master/src/Animations/SwapSides'}>
                         <LayoutBox
                             title={'Shift'}
                             description={'Shift absolute container from left to right.'}
