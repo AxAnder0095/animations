@@ -110,6 +110,7 @@ function MainPage() {
                         />
                     </Link>
 
+
                 </div>
                 <h1 className={'text-center mb-5 mt-5'}>3D Animations <br/> non-interactive</h1>
                 <div className={'three-d-animations'}>
@@ -138,6 +139,7 @@ function MainPage() {
                             animation={<CustomButtonOne/>}
                         />
                     </Link>
+
                 </div>
             </div>
         </div>
