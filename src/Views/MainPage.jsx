@@ -16,6 +16,7 @@ import ZoomIn from "../Animations/ZoomIn/ZoomIn.jsx";
 import LayoutBox from "../LayoutBox/LayoutBox.jsx";
 import Atom from "../Animations/Atom/Atom.jsx";
 import SwapSides from "../Animations/SwapSides/SwapSides.jsx";
+import GlassCube from "../Animations/GlassCube/GlassCube.jsx";
 
 function MainPage() {
     return (
@@ -127,7 +128,6 @@ function MainPage() {
                     </Link>
 
 
-
                 </div>
                 <h1 className={'text-center mb-5 mt-5'}>3D Animations <br/> non-interactive</h1>
                 <div className={'three-d-animations'}>
@@ -144,6 +144,13 @@ function MainPage() {
                             title={'Rotating cards'}
                             description={'Cards that spin in a 3d space'}
                             animation={<RotatingRectangles/>}
+                        />
+                    </Link>
+                    <Link className={'source-link'} to={'https://github.com/AxAnder0095/animations/tree/master/src/Animations/RotatingRectangles'}>
+                        <LayoutBox
+                            title={'Glass Cube'}
+                            description={'Cube with stained glass effect'}
+                            animation={<GlassCube/>}
                         />
                     </Link>
                 </div>

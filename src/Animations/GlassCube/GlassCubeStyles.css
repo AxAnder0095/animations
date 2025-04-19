@@ -1,0 +1,61 @@
+.glass-cube-scene {
+  width: 150px;
+  height: 150px;
+  perspective: 600px;
+  margin: 100px auto;
+}
+
+.glass-cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(30deg);
+  animation: gs-spin 8s infinite linear;
+}
+@keyframes gs-spin {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.face {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gs-front {
+  transform: rotateY(0deg) translateZ(75px);
+}
+
+.gs-back {
+  transform: rotateY(0deg) translateZ(-75px);
+}
+
+.gs-left {
+  transform: rotateY(90deg) translateZ(-75px);
+}
+
+.gs-right {
+  transform: rotateY(-90deg) translateZ(-75px);
+}
+
+.gs-top {
+  transform: rotateX(90deg) translateZ(75px);
+}
+
+.gs-bottom {
+  transform: rotateX(90deg) translateZ(-75px);
+}
+
+/*# sourceMappingURL=GlassCubeStyles.css.map */
