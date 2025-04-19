@@ -156,14 +156,20 @@ function MainPage() {
                 </div>
                 <h1 className={'text-center mt-5 mb-5'}>Interactable Animations</h1>
                 <div className={'interactable-animations mb-5'}>
-                    <Link className={'source-link-interactable'} to={'https://github.com/AxAnder0095/animations/tree/master/src/InteractableAnimations/CustomButtonOne'}>
+                    <Link className={'source-link-interactable'} to={'https://github.com/AxAnder0095/animations/tree/master/src/Animations/GlassCube'}>
                         <LayoutBox
                             title={'Hover Effect Button'}
                             description={'Buttons where background transition to black and text transitions to white'}
                             animation={<CustomButtonOne/>}
                         />
                     </Link>
-
+                    <Link className={'source-link-interactable'} to={'https://github.com/AxAnder0095/animations/tree/master/src/Animations/GlassCube'}>
+                        <LayoutBox
+                            title={'Light / Dark Mode'}
+                            description={'Button that changes text and background to light or dark mode. Example could be applied to a website'}
+                            animation={<CustomButtonOne/>}
+                        />
+                    </Link>
                 </div>
             </div>
         </div>
